@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+     font-family: "Montserrat", sans-serif;
+     font-size: 17px;
+     
+}
+
+
+main{
+    min-height: 100vh;
+}
+
+header{
+    background: #2d4057;
+    position:fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px 15px 5px 15px;
+}
+
+navbar{
+    margin-left: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+    overflow: auto;
+}
+
+navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+navbar a:hover {
+    color: gray;
+    text-decoration: underline 1px;
+}
+
+footer{
+    min-height: 80px;
+    background: #2d4057;
+    text-align: center;
+    color: white;
+    padding-top: 35px;
+}
+
+p {
+    line-height: 150%;
+    text-indent: 30px;
+}
+
+li{
+    margin-top: 10px;
+    padding-left: 15px;
+    list-style-image: linear-gradient(#fa9483, #fa9483);
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin-top: 0;
+    font-family: "Dancing Script", cursive;
+}
+
+h1{font-size: 270%;}
+h2{font-size: 200%;}
+section{
+    padding: 90px 15%;
+
+}
+
+.logo{
+    height:50px
+}
+
+#index{
+   background: linear-gradient(#00000075,#0000002f), url('../images/index.png'); 
+   background-size: cover;
+   min-height: 100vh;
+}
+
+.index-info {
+    margin-top: 25vh;
+    text-align: center;
+}
+
+.index-info h1 {
+    font-size: 350%;
+    color: white;
+    border: 2px solid gray;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #2d40578c;
+}
+
+.link-index{
+    color: white;
+    text-decoration: underline #915967 2px;
+    font-size: 20px;
+}
+
+.link-index:hover{
+    color: #d4b716
+}
+
+.centered {
+    text-align: center;
+}
+
+.vframe {
+    width: 100%;
+    height: 30vw;
+    border: 2px solid #fa9483;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.balti-container {
+        background-image: url('images/imaginepentrutabel.jpg'); /* Înlocuiește cu imaginea dorită */
+        background-size: cover;
+        background-position: center;
+        padding: 50px 20px;
+        font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    .balti-table {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        border-collapse: collapse;
+        /* Fundal semi-transparent pentru tot tabelul */
+        background-color: rgba(255, 255, 255, 0.85); 
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .balti-table thead tr {
+        background-color: #2d4057;
+        color: #ffffff;
+        text-align: left;
+    }
+
+    .balti-table th,
+    .balti-table td {
+        padding: 15px 20px;
+        border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+    }
+
+    /* Efectul de rânduri alternative (zebra) cu transparență */
+    .balti-table tbody tr:nth-of-type(odd) {
+        background-color: rgba(243, 243, 243, 0.5);
+    }
+
+    .balti-table tbody tr:hover {
+        background-color: rgba(0, 86, 179, 0.1);
+        transition: 0.3s;
+    }
+
+    .balti-table td strong {
+        color: #333;
+    }
+
+    .loc{
+        overflow: auto;
+        border-bottom: 3px #f3deca dashed;
+        margin-bottom: 15px;
+    }
+
+    .loc img{
+        height: 18vh;
+        width: 18vh;
+        object-fit: cover;
+        border-radius: 50%;
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+
+    .harta{
+    width: 100%;
+    height: 40vh;
+    border-radius: 5px;
+    }
+
+    .row{
+        overflow: auto;
+    }
+
+    [class^="col-"] {
+        float: left;
+        padding: 0px;
+    }
+
+    .col-50{
+        width: 50%;
+        float: left;
+        padding: 0px 10px;
+    }
+
+    .contacte, .cform{
+        border: 2px solid #f3deca;
+        border-radius: 5px;
+        background-color: #f3deca6b;
+        padding: 5px 5%;
+        height: 325px;
+        margin-bottom: 15px;
+    }
+
+    .cform input, .cform textarea{
+        width: 100%;
+        font-size: 15px;
+        font-family: inherit;
+        margin-bottom: 10px;
+        padding: 4px 6px;
+    }
+
+    #hamburger{
+        color: white;
+        font-size: 28px;
+        position: absolute;
+        right: 22px;
+        top: 24px;
+        cursor: pointer;
+        display: none;
+    }
+
+        .video {
+        display: block;
+        /* margin: 0 auto;  Eliminăm dacă folosim width 100% */
+        
+        width: 100%;       /* Forțează videoclipul să se întindă până la margini */
+        max-width: 800px;  /* Limitează mărimea maximă pe ecrane mari (ajustează cifra) */
+        margin: 20px auto; /* Centrează videoclipul pe mijlocul paginii */
+        
+        border-radius: 5px;
+        border: 2px solid #f3deca;
+        
+        /* Această linie previne apariția spațiilor goale sub video */
+        object-fit: cover; 
+    }
+
+    .titluvideo {
+        text-align: center;
+        font-size: 200%;
+        margin-top: 20px;
+    }
+
+    :root {
+            --primary-blue: #2d4057;
+            --accent-red: #0000008c;
+            --light-gray: #f4f4f4;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+        
+        .calendar-container { max-width: 900px; margin: 20px auto; padding: 20px; }
+
+        .tradition-table { width: 100%; border-collapse: collapse; margin-top: 20px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+        
+        .tradition-table th { background-color: var(--primary-blue); color: white; text-align: left; padding: 15px; }
+        
+        .tradition-table td { padding: 12px 15px; border-bottom: 1px solid #ddd; }
+        
+        .tradition-table tr:hover { background-color: #f9f9f9; transition: 0.3s; }
+        
+        .date-badge { background: var(--accent-red); color: white; padding: 5px 10px; border-radius: 4px; font-weight: bold; font-size: 0.9em; }
+        
+        .category { font-style: italic; color: #666; font-size: 0.85em; }
+
+        .review-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f3deca75;
+    border: #f3deca;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+#reviews-list {
+    margin-top: 30px;
+}
+
+.review-item {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border-left: 4px solid #007bff;
+}
+
+    /* Media trebuie sa fie la sfirsitul fisierului */
+    @media (max-width: 800px) {
+        
+        body{
+            font-size: 16px;
+        }
+        section{
+        padding: 90px 10px;
+        }
+
+        .index-info h1 {
+            font-size: 250%;
+        }
+
+        .vframe {
+            height: 55vw;
+        }
+
+        [class^="col-"] {
+        width: 100% !important;
+    }
+
+        navbar a {
+            display: none;
+        }
+        
+        navbar.mobile a {
+            display: block;
+            text-align: center;
+            margin-top: 12px;
+        }
+
+        navbar {
+            display: block;
+        }
+
+        #hamburger {
+            display: block;
+        }
+        
+        .video {
+    display: block;
+    /* margin: 0 auto;  Eliminăm dacă folosim width 100% */
+    
+    width: 100%;       /* Forțează videoclipul să se întindă până la margini */
+    max-width: 800px;  /* Limitează mărimea maximă pe ecrane mari (ajustează cifra) */
+    margin: 20px auto; /* Centrează videoclipul pe mijlocul paginii */
+    
+    border-radius: 5px;
+    border: 2px solid #f3deca;
+    
+    /* Această linie previne apariția spațiilor goale sub video */
+    object-fit: cover; 
+}
+    }

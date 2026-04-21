@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="icon" href="../images/logo.png">
+    <script src="../js/script.js"></script>
+
+    <title>Bălți - Contacte</title>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="../images/logo.png">
+        <navbar>
+            <a href="../index.html">Acasă</a>
+            <a href="/pages/despre.html">Despre</a>
+            <a href="traditii.html">Tradiții</a>
+            <a href="/pages/exploreaza.html">Explorează</a>
+            <a href="/pages/contacte.html">Contacte</a>
+        </navbar>
+        <i id="hamburger" onclick="mobileMenu()" class="fa-solid fa-bars"></i>
+    </header>
+
+    <main>
+
+        <section id="contacte">
+            <h1 class="centered">Contacte</h1>
+
+            <div class="row">
+
+                <div class="col-50">
+                    
+                    <div class="contacte">
+                        <h2 class="centered">Date de contact</h2>
+                        <b>Primăria: </b>
+                        <a href="mailto:primaria@balti.md">primaria@balti.md</a>
+                        <br>
+                       
+                         <b>Direcția turism: </b>
+                        <a href="mailto:culturabalti@gmail.com">culturabalti@gmail.com</a>
+                        <br>
+                       
+                         <b>Asociația ghizilor: </b>
+                        <a href="mailto:culturabaltighid@gmail.com">culturabaltighid@gmail.com</a>
+                        <br>
+                         <b>Ajutor pentru refugiați: </b>
+                        <a href="https://help.chisinau.md/" target="_blank">https://help.chisinau.md/</a>
+                        <br>
+                          <b>Ambulanța: </b>
+                        <a href="tel:112">112</a>
+                    </div>
+
+
+                </div>
+
+                <div class="col-50">
+
+                    <form class="cform">
+                        <h2 class="centered">Contactează primăria</h2>
+                        <input type="text" placeholder="Numele Prenumelui">
+                        <input type="text" placeholder="Subiectul mesajului">
+                        <textarea rows="4" placeholder="Mesajul"></textarea>
+                        <input type="submit" value="Trimite">
+                    </form>
+
+                </div>
+
+            </div>
+            <div class="review-container">
+    <h2>Lasă o recenzie</h2>
+    
+    <form id="review-form">
+        <div class="form-group">
+            <label for="username">Numele tău:</label>
+            <input type="text" id="username" placeholder="Introdu numele..." required>
+        </div>
+
+        <div class="form-group">
+            <label>Evaluare:</label>
+            <select id="rating">
+                <option value="5">⭐⭐⭐⭐⭐ (Excelent)</option>
+                <option value="4">⭐⭐⭐⭐ (Foarte bine)</option>
+                <option value="3">⭐⭐⭐ (Satisfăcător)</option>
+                <option value="2">⭐⭐ (Slab)</option>
+                <option value="1">⭐ (Foarte slab)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="comment">Comentariul tău:</label>
+            <textarea id="comment" rows="4" placeholder="Spune-ne părerea ta..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Publică Recenzia</button>
+    </form>
+
+    <hr>
+
+    <div id="reviews-list">
+        <h3>Recenzii recente</h3>
+        <p class="no-reviews">Încă nu există recenzii. Fii primul care scrie una!</p>
+    </div>
+</div>
+            <br>
+            <iframe class="harta"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d171632.2491010582!2d27.736574082286925!3d47.766827841484954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb673a731f2613%3A0x75ffb7a54ede02d9!2zQsSDbMibaSwgTW9sZG92YQ!5e0!3m2!1sen!2s!4v1775927774727!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+    </main>
+
+    <footer>
+        <span>Aparatu Maxim 2026</span>
+    </footer>
+
+</body>
+
+</html>
